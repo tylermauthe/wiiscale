@@ -1,28 +1,20 @@
 #import <Cocoa/Cocoa.h>
 
-#import "PrefsController.h"
 #import "WiiRemote.h"
 #import "WiiRemoteDiscovery.h"
-#import "FPLevelIndicator.h"
 
-@interface AppController : NSWindowController<WiiRemoteDelegate, WiiRemoteDiscoveryDelegate> {
+@interface AppController : NSWindowController<WiiRemoteDelegate, WiiRemoteDiscoveryDelegate, NSApplicationDelegate> {
     
 	IBOutlet NSProgressIndicator* spinner;
-	IBOutlet NSProgressIndicator* ghspinner;
 	IBOutlet NSTextField* weight;
 	IBOutlet NSTextField* status;
 	IBOutlet NSTextField* bbstatus;
-	IBOutlet FPLevelIndicator* weightIndicator;
-	IBOutlet NSPopUpButton* profilesPopUp;
 	IBOutlet NSMenuItem* fileConnect;
 	IBOutlet NSMenuItem* fileTare;
-    IBOutlet NSButton *profileButton;
-	IBOutlet NSWindow* prefs;
-	IBOutlet PrefsController *prefsController;
+    IBOutlet NSImageView *statusImage;
+    IBOutlet NSWindow *saveWindow;
+    IBOutlet NSTextField *weightToSave;
     
-    NSMutableArray *profiles;
-    NSDictionary *strings;
-
 	WiiRemoteDiscovery* discovery;
 	WiiRemote* wii;
 	
@@ -32,18 +24,15 @@
 	float lastWeight;
 	float weightSamples[100];
 	int weightSampleIndex;
+    int weightReadCount;
 	BOOL sent;
 	float height_cm;
+    
+    float confirmedWeight;
+    bool haveConfirmedWeight;
 }
-
-- (NSString*)stringForKey:(NSString *)key;
-- (NSArray*)getFromStorage;
-- (void)setToStorage:(NSArray *)storeArray;
-
+- (IBAction)confirmSaveData:(id)sender;
+- (IBAction)cancelSaveData:(id)sender;
 - (IBAction)doDiscovery:(id)sender;
 - (IBAction)doTare:(id)sender;
-
-- (IBAction)showPrefs:(id)sender;
-- (IBAction)profileChanged:(id)sender;
-
 @end

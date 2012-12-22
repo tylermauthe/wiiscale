@@ -8,26 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		2F8FDED716802F7A0062AF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		2F8FDED816802F7A0062AF9A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		2F8FDED916802F7A0062AF9A /* WiiScale.icns in Resources */ = {isa = PBXBuildFile; fileRef = 825226A112626F23002A257A /* WiiScale.icns */; };
+		2F8FDEDA16802F7A0062AF9A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 732E12C414C26ACD00818EF5 /* LICENSE */; };
+		2F8FDEDB16802F7A0062AF9A /* TextStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73A97EDC14C27DB100312F8B /* TextStrings.plist */; };
+		2F8FDEDC16802F7A0062AF9A /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB70BA9167DCA22007BE0E0 /* lightning.png */; };
+		2F8FDEDE16802F7A0062AF9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		2F8FDEDF16802F7A0062AF9A /* WiiRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 825D9F01108BD2E40009E075 /* WiiRemote.m */; };
+		2F8FDEE016802F7A0062AF9A /* WiiRemoteDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 825D9F03108BD2E40009E075 /* WiiRemoteDiscovery.m */; };
+		2F8FDEE116802F7A0062AF9A /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825D9F0F108BD33C0009E075 /* AppController.m */; };
+		2F8FDEE316802F7A0062AF9A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		2F8FDEE416802F7A0062AF9A /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825D9F09108BD2FD0009E075 /* IOBluetooth.framework */; };
+		2FB70BAA167DCA22007BE0E0 /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB70BA9167DCA22007BE0E0 /* lightning.png */; };
 		732E12C514C26ACD00818EF5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 732E12C414C26ACD00818EF5 /* LICENSE */; };
 		73A97EDD14C27DB100312F8B /* TextStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73A97EDC14C27DB100312F8B /* TextStrings.plist */; };
-		82501D511262C86A00355019 /* PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82501D501262C86A00355019 /* PrefsController.m */; };
 		825226A212626F23002A257A /* WiiScale.icns in Resources */ = {isa = PBXBuildFile; fileRef = 825226A112626F23002A257A /* WiiScale.icns */; };
 		825D9F05108BD2E40009E075 /* WiiRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 825D9F01108BD2E40009E075 /* WiiRemote.m */; };
 		825D9F06108BD2E40009E075 /* WiiRemoteDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 825D9F03108BD2E40009E075 /* WiiRemoteDiscovery.m */; };
 		825D9F0A108BD2FD0009E075 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825D9F09108BD2FD0009E075 /* IOBluetooth.framework */; };
 		825D9F10108BD33C0009E075 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825D9F0F108BD33C0009E075 /* AppController.m */; };
-		82673D18129C9EB30067ADE1 /* FPLevelIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 82673D17129C9EB30067ADE1 /* FPLevelIndicator.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2F8FDEE516802F7A0062AF9A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		825DAA29108C08EE0009E075 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 16;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,11 +62,11 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2F8FDEE916802F7A0062AF9A /* WiiScale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiiScale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB70BA9167DCA22007BE0E0 /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* WiiScale_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiiScale_Prefix.pch; sourceTree = "<group>"; };
 		732E12C414C26ACD00818EF5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		73A97EDC14C27DB100312F8B /* TextStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TextStrings.plist; sourceTree = "<group>"; };
-		82501D4F1262C86A00355019 /* PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsController.h; sourceTree = "<group>"; };
-		82501D501262C86A00355019 /* PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsController.m; sourceTree = "<group>"; };
 		825226A112626F23002A257A /* WiiScale.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WiiScale.icns; sourceTree = "<group>"; };
 		825D9EFF108BD2E40009E075 /* Mii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mii.h; sourceTree = "<group>"; };
 		825D9F00108BD2E40009E075 /* WiiRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiiRemote.h; sourceTree = "<group>"; };
@@ -57,13 +77,20 @@
 		825D9F09108BD2FD0009E075 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = /System/Library/Frameworks/IOBluetooth.framework; sourceTree = "<absolute>"; };
 		825D9F0E108BD33C0009E075 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		825D9F0F108BD33C0009E075 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		82673D16129C9EB30067ADE1 /* FPLevelIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLevelIndicator.h; sourceTree = "<group>"; };
-		82673D17129C9EB30067ADE1 /* FPLevelIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLevelIndicator.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* WiiScale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiiScale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F8FDEE216802F7A0062AF9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8FDEE316802F7A0062AF9A /* Cocoa.framework in Frameworks */,
+				2F8FDEE416802F7A0062AF9A /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,10 +108,6 @@
 			children = (
 				825D9F0E108BD33C0009E075 /* AppController.h */,
 				825D9F0F108BD33C0009E075 /* AppController.m */,
-				82501D4F1262C86A00355019 /* PrefsController.h */,
-				82501D501262C86A00355019 /* PrefsController.m */,
-				82673D16129C9EB30067ADE1 /* FPLevelIndicator.h */,
-				82673D17129C9EB30067ADE1 /* FPLevelIndicator.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -112,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* WiiScale.app */,
+				2F8FDEE916802F7A0062AF9A /* WiiScale.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +165,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2FB70BA9167DCA22007BE0E0 /* lightning.png */,
 				825226A112626F23002A257A /* WiiScale.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -176,6 +201,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2F8FDED516802F7A0062AF9A /* Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F8FDEE616802F7A0062AF9A /* Build configuration list for PBXNativeTarget "Release" */;
+			buildPhases = (
+				2F8FDED616802F7A0062AF9A /* Resources */,
+				2F8FDEDD16802F7A0062AF9A /* Sources */,
+				2F8FDEE216802F7A0062AF9A /* Frameworks */,
+				2F8FDEE516802F7A0062AF9A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Release;
+			productInstallPath = "$(HOME)/Applications";
+			productName = GoogleHealthWeight;
+			productReference = 2F8FDEE916802F7A0062AF9A /* WiiScale.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8D1107260486CEB800E47090 /* WiiScale */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WiiScale" */;
@@ -216,11 +260,25 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* WiiScale */,
+				2F8FDED516802F7A0062AF9A /* Release */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2F8FDED616802F7A0062AF9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8FDED716802F7A0062AF9A /* InfoPlist.strings in Resources */,
+				2F8FDED816802F7A0062AF9A /* MainMenu.xib in Resources */,
+				2F8FDED916802F7A0062AF9A /* WiiScale.icns in Resources */,
+				2F8FDEDA16802F7A0062AF9A /* LICENSE in Resources */,
+				2F8FDEDB16802F7A0062AF9A /* TextStrings.plist in Resources */,
+				2F8FDEDC16802F7A0062AF9A /* lightning.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,12 +288,24 @@
 				825226A212626F23002A257A /* WiiScale.icns in Resources */,
 				732E12C514C26ACD00818EF5 /* LICENSE in Resources */,
 				73A97EDD14C27DB100312F8B /* TextStrings.plist in Resources */,
+				2FB70BAA167DCA22007BE0E0 /* lightning.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F8FDEDD16802F7A0062AF9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8FDEDE16802F7A0062AF9A /* main.m in Sources */,
+				2F8FDEDF16802F7A0062AF9A /* WiiRemote.m in Sources */,
+				2F8FDEE016802F7A0062AF9A /* WiiRemoteDiscovery.m in Sources */,
+				2F8FDEE116802F7A0062AF9A /* AppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,8 +314,6 @@
 				825D9F05108BD2E40009E075 /* WiiRemote.m in Sources */,
 				825D9F06108BD2E40009E075 /* WiiRemoteDiscovery.m in Sources */,
 				825D9F10108BD33C0009E075 /* AppController.m in Sources */,
-				82501D511262C86A00355019 /* PrefsController.m in Sources */,
-				82673D18129C9EB30067ADE1 /* FPLevelIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +339,53 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2F8FDEE716802F7A0062AF9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../gdata-objectivec-client-read-only/Source/build/Release\"",
+					"\"$(SRCROOT)/../../Downloads/gdata-objectivec-client-1/Source/build/Debug\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../gdata-objectivec-client-read-only/Source/build/Debug\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WiiScale_Prefix.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = WiiScale;
+			};
+			name = Debug;
+		};
+		2F8FDEE816802F7A0062AF9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../gdata-objectivec-client-read-only/Source/build/Release\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../gdata-objectivec-client-read-only/Source/build/Debug\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WiiScale_Prefix.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = WiiScale;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -291,6 +406,7 @@
 				GCC_PREFIX_HEADER = WiiScale_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = WiiScale;
 			};
 			name = Debug;
@@ -312,6 +428,7 @@
 				GCC_PREFIX_HEADER = WiiScale_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = WiiScale;
 			};
 			name = Release;
@@ -326,6 +443,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SYMROOT = "$(PROJECT_DIR)/build";
 			};
 			name = Debug;
 		};
@@ -337,12 +455,22 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
+				SYMROOT = "$(PROJECT_DIR)/build";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2F8FDEE616802F7A0062AF9A /* Build configuration list for PBXNativeTarget "Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F8FDEE716802F7A0062AF9A /* Debug */,
+				2F8FDEE816802F7A0062AF9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WiiScale" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
