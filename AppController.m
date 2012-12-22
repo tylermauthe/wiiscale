@@ -58,6 +58,10 @@
     [self cleanUpConnection];
 }
 
+- (IBAction)cancelSaveData:(id)sender {
+    [self resetWindowAfterSaveData];
+}
+
 #pragma mark Wii Balance Board
 
 - (IBAction)confirmSaveData:(id)sender {
@@ -67,32 +71,26 @@
     NSFileHandle *file = [NSFileHandle fileHandleForWritingAtPath:csvPath];
     
     NSData *weightData;
-    if(file!=nil)
+    if(file==nil)
     {
-        weightData = [self csvDataValueFromFloat:confirmedWeight withDelimeter:@","];
-        [file truncateFileAtOffset:[file seekToEndOfFile]];
-        [file writeData:weightData];
+        [[NSFileManager defaultManager] createFileAtPath:csvPath
+                                                contents:[@"" dataUsingEncoding:NSUTF8StringEncoding]
+                                              attributes:nil];
+        file = [NSFileHandle fileHandleForWritingAtPath:csvPath];
     }
-    else
-    {
-        weightData = [self csvDataValueFromFloat:confirmedWeight];
-        [[NSFileManager defaultManager] createFileAtPath:csvPath contents:weightData attributes:nil];
-    }
+    
+    weightData = [self csvDataValueFromFloat:confirmedWeight];
+    
+    [file truncateFileAtOffset:[file seekToEndOfFile]];
+    [file writeData:weightData];
+    
     [self resetWindowAfterSaveData];
 }
 
-- (NSData *) csvDataValueFromFloat:(float)value {
-    return [[NSString stringWithFormat:@"%f",value]
+- (NSData *) csvDataValueFromFloat:(float)value{
+    NSDate *currentTime = [[NSDate alloc] init];
+    return [[NSString stringWithFormat:@"%@, %f\r\n",currentTime,value]
                 dataUsingEncoding:NSUTF8StringEncoding];
-}
-
-- (NSData *) csvDataValueFromFloat:(float)value withDelimeter: (NSString *)delimeter{
-    return [[NSString stringWithFormat:[delimeter stringByAppendingString:@"%f"],value]
-            dataUsingEncoding:NSUTF8StringEncoding];
-}
-
-- (IBAction)cancelSaveData:(id)sender {
-    [self resetWindowAfterSaveData];
 }
 
 - (void)resetWindowAfterSaveData {
