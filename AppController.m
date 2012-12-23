@@ -69,8 +69,6 @@
     csvPath = [csvPath stringByExpandingTildeInPath];
     
     NSFileHandle *file = [NSFileHandle fileHandleForWritingAtPath:csvPath];
-    
-    NSData *weightData;
     if(file==nil)
     {
         [[NSFileManager defaultManager] createFileAtPath:csvPath
@@ -79,6 +77,7 @@
         file = [NSFileHandle fileHandleForWritingAtPath:csvPath];
     }
     
+    NSData *weightData;
     weightData = [self csvDataValueFromFloat:confirmedWeight];
     
     [file truncateFileAtOffset:[file seekToEndOfFile]];
@@ -93,7 +92,7 @@
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *currentTime = [dateFormatter stringFromDate:today];
     [dateFormatter release]; //useless!
-
+    
     return [[NSString stringWithFormat:@"%@, %f\r\n",currentTime,value]
                 dataUsingEncoding:NSUTF8StringEncoding];
 }
