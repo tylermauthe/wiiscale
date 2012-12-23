@@ -88,7 +88,12 @@
 }
 
 - (NSData *) csvDataValueFromFloat:(float)value{
-    NSDate *currentTime = [[NSDate alloc] init];
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *currentTime = [dateFormatter stringFromDate:today];
+    [dateFormatter release]; //useless!
+
     return [[NSString stringWithFormat:@"%@, %f\r\n",currentTime,value]
                 dataUsingEncoding:NSUTF8StringEncoding];
 }
